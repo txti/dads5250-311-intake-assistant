@@ -23,7 +23,7 @@ flowchart LR
     Agent --> Search["db/request_types.py"]
     Search --> Lance[("data/lancedb")]
     Agent --> LLM["OpenRouter LLM"]
-    CSV["Boston 311 CSVs"] -->|"notebooks/311-data-processing.ipynb"| Lance
+    CSV["Boston 311 CSVs"] -->|"notebooks/boston-311-staffing-and-intake.ipynb"| Lance
 ```
 
 In each chat turn, Gradio passes the visible history to the agent. The agent searches the request types with everything the user has said so far, then asks the LLM to pick the type, department and queue from those results.
@@ -85,7 +85,7 @@ powershell -ExecutionPolicy Bypass -File .\scripts\bootstrap.ps1
 
 ### 3. Build the 311 database
 
-Open `notebooks/311-data-processing.ipynb`, select the `.venv` kernel and run all cells. It downloads the 2023 and 2024 request files (about 180 MB each) into `data/`, then writes the `requests` and `request_types` tables to `data/lancedb`. Later runs reuse the downloaded files.
+Open `notebooks/boston-311-staffing-and-intake.ipynb`, select the `.venv` kernel and run all cells. It downloads the 2023 and 2024 request files (about 180 MB each) into `data/`, then writes the `requests` and `request_types` tables to `data/lancedb`. The forecast, staffing and sensitivity results go to CSV files in `outputs/`. Later runs reuse the downloaded files.
 
 ## Run
 

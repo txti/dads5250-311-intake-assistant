@@ -5,9 +5,7 @@ description = "An agentic 311 intake assistant that turns a resident's plain-lan
 readme = "README.md"
 requires-python = "==3.12.3"
 dependencies = [
-    "fastembed>=0.9.0",
     "gradio>=6.17.3",
-    "huggingface-hub>=0.33.4,<1.0.0",
     "ipykernel>=7.4.0",
     "ipywidgets>=8.1.9",
     "lancedb>=0.40.0",
