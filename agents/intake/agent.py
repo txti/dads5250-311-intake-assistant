@@ -1,3 +1,5 @@
+import json
+
 import pandas as pd
 from langchain_core.messages import AIMessage, HumanMessage
 from langgraph.graph import START, MessagesState, StateGraph
@@ -5,6 +7,12 @@ from langgraph.graph import START, MessagesState, StateGraph
 from core.llm import parse
 from core.models import Classification
 from db.request_types import search
+
+from datetime import datetime
+from langchain_core.tools import tool
+from db.request_types import DATA
+import lancedb
+from langgraph.prebuilt import ToolNode, tools_condition
 
 PROMPT = """You are a Boston 311 intake assistant. From the candidate request types below, pick the single best match for the resident's message.
 
@@ -109,6 +117,18 @@ def generate(state: State) -> dict:
             f"Typical days to close: {median}\n"
             f"On-time rate (2024): {on_time}"
         )
+
+        # File the request
+        file_result = file_request.invoke(
+            {
+                "resident_message": user_text,
+                "request_type": result.type,
+                "department": result.department,
+                "queue": result.queue,
+                "confidence": result.confidence,
+            }
+        )
+        reply_text += f"\n\n{file_result}"
     else:
         reply_text = f"Could you clarify: {result.clarifying_question}"
 
@@ -140,3 +160,32 @@ if __name__ == "__main__":
             {"role": "assistant", "content": answer},
         ]
         print(f"\nBot: {answer}")
+
+
+@tool
+def file_request(
+    resident_message: str,
+    request_type: str,
+    department: str,
+    queue: str,
+    confidence: float,
+) -> str:
+    """File a classified 311 request into the filed_requests table."""
+    db = lancedb.connect(DATA / "lancedb")
+    table = db.open_table("filed_requests")
+    table.add(
+        [
+            {
+                "resident_message": resident_message,
+                "type": request_type,
+                "department": department,
+                "queue": queue,
+                "confidence": confidence,
+                "filed_at": datetime.now().isoformat(),
+            }
+        ]
+    )
+    return f"Filed request as {request_type} ({department})."
+
+
+tools = [file_request]
