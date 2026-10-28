@@ -1,0 +1,41 @@
+message,expected_department,expected_type
+"hey there's trash all over Commonwealth Ave near the Dunkin, looks like a truck missed a bin or something. wicked messy.",PWDx,Requests for Street Cleaning
+Big pothole on the corner of Tremont and Boylston St. Almost popped my tire coming home last night. Pls fix ASAP.,PWDx,Request for Pothole Repair
+The streetlight outside 420 Washington St in Brighton keeps flickering then going completely dark. Plz fix it's super creepy at night.,PWDx,Street Light Outages
+Someone left a broken couch and a mattress on the sidewalk near Maverick station. It's blocking the whole walkway.,PWDx,Illegal Dumping
+graffiti all over the brick wall on hanover st in the north end. someone tagged it with green spray paint overnight.,PWDx,Graffiti Removal
+"Someone dumped a filthy, stinky mattress right on the sidewalk outside 612 East Fourth St in Southie. It’s been out here for three days getting rained on and now it smells wicked gross. People can't even push strollers past it.",PWDx,Illegal Dumping
+the sidewalk is totally cracked and buckling on beacon st right near the park. someone is going to trip and bust their knee.,PWDx,Sidewalk Repair (Make Safe)
+Recycling truck just skipped our whole block on Savin Hill Ave today. Everyone's bins are still full out here.,PWDx,Missed Trash/Recycling/Yard Waste/Bulk Item
+"There's a massive gaping hole in the road on Beacon St right past the Gibson House. It's deep enough to swallow a whole tire, people are swerving into oncoming traffic to miss it",PWDx,Request for Pothole Repair
+Someone parked right in front of a fire hydrant on Newbury St. Black SUV with plate numbers missing.,BTDT,Parking Enforcement
+the traffic light at the intersection of mass ave and columbus is totally busted. it's just flashing red both ways and traffic is a nightmare.,BTDT,Traffic Signal Repair
+"This beat-up Honda civic has been sitting in a resident spot on Bowdoin St for 3 weeks now. It's got flat tires, no inspection sticker, and a smashed window. We need the parking spots out here",BTDT,Parking Enforcement
+This car has been sitting in our resident parking spot on Dorchester Ave for 4 days now without a valid permit sticker. Tow it please.,BTDT,Parking Enforcement
+The crosswalk signal at Huntington and Longwood doesn't give enough time to cross. The countdown is completely broken.,BTDT,Traffic Signal Inspection
+guy blocking my driveway in southie. can't get my car out to go to work. send parking enforcement now!!,BTDT,Parking Enforcement
+The one-way arrow sign right near the Kenmore square intersection on Brookline Ave is completely bent backwards. Drivers can't see it and cars keep accidentally turning down the wrong way.,BTDT,Sign Repair
+Meter is dead on Charles St near the common. Put quarters in but it still says expired.,BTDT,Parking Meter Repair
+Double parked van completely blocking traffic on a one-way street in Eastie near Meridian St.,BTDT,Traffic Enforcement
+a huge tree branch fell across the path in the Boston Common near the frog pond. people have to climb over it.,PARK,Ground Maintenance
+The swings at the playground on m street are completely broken. One is missing a chain entirely.,PARK,Equipment Repair
+Grass hasn't been cut at Christopher Columbus Park in weeks. It's getting wicked long and full of weeds.,PARK,Ground Maintenance
+trash cans overflowing at the public park near faneuil hall. bees everywhere.,PARK,Ground Maintenance
+"There's a completely dead tree right outside the library on East Broadway in Southie. Massive branches are rotting and dry, one's gonna snap and drop right onto the sidewalk. Wicked dangerous.",PARK,Ground Maintenance
+The water fountain at the dog park in South End isn't working. Dogs have no water out here in the heat.,PARK,Equipment Repair
+Someone spray painted the benches at the Rose Kennedy Greenway.,PARK,Equipment Repair
+broken glass all over the basketball court on columbus ave. kids can't play here safely.,PARK,Ground Maintenance
+All the overhead lights are completely out at the Christopher Columbus Park waterfront path. It's pitch black down there past 6 PM and feels wicked unsafe to walk through,PARK,Parks Lighting/Electrical Issues
+Our landlord hasn't turned on the heat yet and it's freezing in our apartment on Symphony Rd. It's literally 55 degrees inside.,ISD,Heat - Excessive  Insufficient
+Rats running around the alleyway behind the restaurant on Hanover St. There's open food bags everywhere.,ISD,Rodent Activity
+There's an illegal construction crew working next door on Centre St. They are doing structural work without any permits posted.,ISD,Work w/out Permit
+Huge piles of trash and junk filling up the neighbor's yard on Bowdoin St. It smells awful and attracts bugs.,ISD,Unsanitary Conditions - Establishment
+ceiling is leaking water in my kitchen. landlord refuses to answer my calls or fix it.,ISD,Unsanitary Conditions - Establishment
+Our apartment basement on Calumet St is completely covered in black mold because of a pipe leak that the landlord refuses to fix. The smell is coming up through the floorboards and making my roommates sick. We need an inspector down here.,ISD,Chronic Dampness/Mold
+"The restaurant down the street keeps throwing loose grease and food scrap into the regular dumpster, it's leaking everywhere.",ISD,Unsanitary Conditions - Establishment
+No smoke detectors in the hallway of our building on Blue Hill Ave. Total fire hazard.,ISD,Building Inspection Request
+"There are at least 12 people living in the small 2-bedroom unit above me on Linden St. They have mattresses lined up in the hallway, extension cords running everywhere, and it looks like a major fire hazard. This place is totally overcrowded.",ISD,Overcrowding
+Where do I go to renew my marriage license? Can I do that online or do I have to go to city hall?,Other,Other
+I want to apply for a library card at the Copley branch. What documents do I need to bring?,Other,Other
+Can someone tell me what time the Boston Marathon starts this coming Monday?,Other,Other
+how do i pay my property taxes online?,Other,Other
